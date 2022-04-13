@@ -54,4 +54,4 @@ def search():
 
 if  __name__ == '__main__':
 
-    app.run(port = 5679, debug =  False)
+    app.run(debug =  True, use_reloader = True)
