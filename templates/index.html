@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Home Page</title>
+	<style>
+		background-color {color: pink}
+		hl {color: white; font-size: 36; font-family: courier}
+		p {color: white; bold; font-size: 36}
+		table {font-size: 24}
+	</style>
+</head>
+
+<body>
+<h1>School Staff Search</h1>
+<form action =  "{{ url_for('search') }}" method="POST" >
+	<table bgcolor = "blue"
+		<tr>
+			<th><p align = "center">Department   </p></th>
+			<th><p align = "center">School </p></th>
+		</tr>
+		<tr>
+			<td>
+				<input name = "searchPlace1">
+			</td>
+			<td>
+				<input name = "searchPlace2">
+			</td>
+		</tr>
+	</table>
+	<br>
+	<input type = "submit" value = "Search">
+</form>
+</body>	
+</html>

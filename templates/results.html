@@ -1,0 +1,30 @@
+<html>
+
+<p>Scroll Down</p>
+
+<body>
+	<table width = "70%" border = "1">
+		<tr>
+			<th><p align = "center">School</p></th>
+			<th><p align = "center">Name</p></th>
+			<th><p align = "center">Department</p></th>
+			<th><p align = "center">Contact</p></th>
+			<th><p align = "center">Address</p></th>
+			<br>
+		</tr>
+		
+		{% for result in lst1 %}
+			<tr>
+				<td>{{ result[0] }}</td>
+				<td>{{ result[1] }}</td>
+				<td>{{ result[2] }}</td>
+				<td>{{ result[3] }}</td>
+				<td>{{ result[4] }}</td>
+				
+			</tr>
+		<br>
+		{% endfor %}
+	</table>
+	
+</body>
+</html>
